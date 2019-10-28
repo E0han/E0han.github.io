@@ -290,11 +290,11 @@ E.g. A class can be closed w.r.t. attribute access (access methods only – no c
 Recognise GRASP principles (shown above) as a generalisation of other design patterns. 
 **GoF** Gang of Four Design patterns, are the four authors of the book - *”Design Patterns: Elements of Reusable Object-Oriented Software”.* 
 Three type of pattern:
-	- ::Creational patterns::
+	- Creational patterns
 		- Abstract the object instantiation process
-	- ::Structural pattern::
+	- Structural pattern
 		- Describe how classes and objects can be combined to form larger structures
-	- ::Behavioural pattern::
+	- Behavioural pattern
 		- Are most specifically concerned with communication between objects
 ###  3.1. <a name='Adapter'></a>Adapter 
 ####  3.1.1. <a name='Scenario'></a>Scenario 
@@ -307,7 +307,7 @@ POS system needs to support several kinds of external services, including:
  Each service has a different API, which cannot be changed. 
 
 ####  3.1.2. <a name='Problem-1'></a>Problem
-How to resolve incompatible interfaces, or provide a ::stable interface:: to ::similar components:: with ::different interfaces::
+How to resolve incompatible interfaces, or provide a stable interface to similar components with different interfaces
 ####  3.1.3. <a name='Solution-1'></a>Solution
 Convert the original interface of a component into another interface, through an intermediate adapter object
 
@@ -384,7 +384,7 @@ How to get visibility to this single ServicesFactory instance ?
 	- Only one instance of the factory is needed
 	- Where required, pass through to methods or 
 		- initialise objects with a ref? *No.*
-	- Use ::**Singleton pattern**::to provide a single access point through global visibility 
+	- Use **Singleton pattern**to provide a single access point through global visibility 
 
 ###  3.3. <a name='SingletonPattern'></a>Singleton Pattern
 ####  3.3.1. <a name='problem'></a>problem
@@ -422,7 +422,7 @@ Why not aren’t all Singleton service methods *static?*
 
 ###  3.4. <a name='Strategy'></a>Strategy
 ####  3.4.1. <a name='Problem-1'></a>Problem
-How to design for varying, but related, ::algorithms or policies::? 
+How to design for varying, but related, algorithms or policies? 
 How to design for the ability to change these algorithms or policies? 
 ####  3.4.2. <a name='Solution-1'></a>Solution
 Define each algorithm/policy/strategy in a separate class, with a common interface. 
@@ -484,7 +484,7 @@ public void draw() {
 ![]({{site.baseurl}}/assets/smd/Screen%20Shot%202019-10-27%20at%207.35.09%20pm.png)
 
 	- the *Sale*object treats a Composite Strategy that contains other strategies just like any other *ISalePricingStrategy*
-	- **UML**: ::ISalePricingStrategy is an interface, not a class::; this is the way in UML 2 to indicate an object of an unknown class, but that implements this interface 
+	- **UML**: ISalePricingStrategy is an interface, not a class; this is the way in UML 2 to indicate an object of an unknown class, but that implements this interface 
 ![]({{site.baseurl}}/assets/smd/Screen%20Shot%202019-10-27%20at%207.36.22%20pm.png)
 
 
@@ -494,7 +494,7 @@ E.g. to invalidate an action:
 	- paid by a gift card
 	- charitable donation sale
 
-This customisation should have ::low impact:: on the existing software components
+This customisation should have low impact on the existing software components
 A “rule engine” subsystem, whise specific implementation is not yet known. It may be implemented with
 	- the strategy pattern 
 	- free open-source rule interpreters
@@ -503,7 +503,7 @@ A “rule engine” subsystem, whise specific implementation is not yet known. I
 ####  3.7.1. <a name='problem-1'></a>problem
 Require a common, unified interface to a disparate set of implementations or interfaces—such as within a subsystem—is required. There may be undesirable coupling to many things in the subsystem, or the implementation of the subsystem may change. What to do? 
 ####  3.7.2. <a name='Solution-1'></a>Solution
-Define a single point of contact to the subsystem—::a facade object that wraps the subsystem::. This facade object presents a single unified interface and is responsible for collaborating with the subsystem components. 
+Define a single point of contact to the subsystem—a facade object that wraps the subsystem. This facade object presents a single unified interface and is responsible for collaborating with the subsystem components. 
 ![]({{site.baseurl}}/assets/smd/Screen%20Shot%202019-10-27%20at%208.16.36%20pm.png)
 
 ####  3.7.3. <a name='UMLpackagediagram:Facade'></a>UML package diagram: Facade
@@ -521,13 +521,13 @@ public class Sale { 	public void makeLineItem( ProductDescription desc, int qu
 ![]({{site.baseurl}}/assets/smd/Screen%20Shot%202019-10-27%20at%208.19.35%20pm.png)
 
 ####  3.7.5. <a name='Example:FacadeVs.Adapter'></a>Example: Facade Vs. Adapter
-- **Façade**wraps access to a ::subsystem or system:: with ::a single object:: 
-- **Adaptor**wraps each API with ::varying interface:: to provide a single interface 
+- **Façade**wraps access to a subsystem or system with a single object 
+- **Adaptor**wraps each API with varying interface to provide a single interface 
 
 
 ###  3.8. <a name='Observeraka.Publish-Subscribe'></a>Observer (aka. Publish-Subscribe)
 ####  3.8.1. <a name='Problem-1'></a>Problem
-Different kinds of ::subscriber objects:: are interested in the ::state changes or events:: of a ::publisher object::, and ::want to react in their own unique way:: when the ::publisher generates an event::. Moreover, the publisher wants to maintain low coupling to the subscribers. What to do? 
+Different kinds of subscriber objects are interested in the state changes or events of a publisher object, and want to react in their own unique way when the publisher generates an event. Moreover, the publisher wants to maintain low coupling to the subscribers. What to do? 
 
 ####  3.8.2. <a name='Solution-1'></a>Solution
 Define a “subscriber” or “listener” interface. Subscribers implement this interface. The publisher can dynamically register subscribers who are interested in an event and notify them when an event occurs. 
@@ -654,21 +654,21 @@ When a timer reaches 60 seconds, the crossing light becomes “Red”
 
 ##  5. <a name='ArchitecturalAnalysisandLogicalArchitecture'></a>Architectural Analysis and Logical Architecture
 ###  5.1. <a name='SoftwareArchitecture'></a>Software Architecture
-- The set of ::significant decisions:: about the ::organisation of a software system::
-- the selection of ::the structural elements:: and the ::interfaces by which the system is composed::
-- their ::behaviour:: as specified in the collaborations among those elements 
+- The set of significant decisions about the organisation of a software system
+- the selection of the structural elements and the interfaces by which the system is composed
+- their behaviour as specified in the collaborations among those elements 
 - the composition of these structural and behavioural elements into progressively larger subsystems
 - the architectural style that guides this organisation
 
 ###  5.2. <a name='ArchitecturalAnalysis'></a>Architectural Analysis
 We should do some architectural analysis of the requirements at the beginning to avoid more impact in the future.
 
-- Concerned with identifying and resolving system’s ::non-functional requirements:: in the context of its functional requirements 考虑系统的非功能性需求，联系它的功能性需求
+- Concerned with identifying and resolving system’s non-functional requirements in the context of its functional requirements 考虑系统的非功能性需求，联系它的功能性需求
 - includes identifying and analysing:
 	- architecturally significant requirements
 	- variation points
 	- potential evolution points
-- reduces risk of missing a ::critical factor:: in system design, focuses effort on ::high priority requirements::, and aligns the product with business goals
+- reduces risk of missing a critical factor in system design, focuses effort on high priority requirements, and aligns the product with business goals
 
 ####  5.2.1. <a name='Examples:SignificantFunctionalrequirements'></a>Examples: Significant Functional requirements
 Significant functional requirements 
@@ -713,11 +713,11 @@ Which of the following requirements for new LMS is architecturally significant?
 	2. E.g. extendible -> new release every 6 months
 
 ###  5.7. <a name='ArchitectureFactorTable'></a>Architecture Factor Table
-A documentation that records ::the influence of the factors, their priorities, and their variability:: (immediate need for flexibility and future evolution) 
+A documentation that records the influence of the factors, their priorities, and their variability (immediate need for flexibility and future evolution) 
 
 ![]({{site.baseurl}}/assets/smd/Screen%20Shot%202019-10-28%20at%204.22.51%20pm.png)
 ###  5.8. <a name='TechnicalMemo'></a>Technical Memo
-A documentation that records ::alternative solutions, decisions, influential factors, and motivations:: for the noteworthy issues and decisions 
+A documentation that records alternative solutions, decisions, influential factors, and motivations for the noteworthy issues and decisions 
 
 ![]({{site.baseurl}}/assets/smd/Screen%20Shot%202019-10-28%20at%204.24.14%20pm.png)
 ![]({{site.baseurl}}/assets/smd/Screen%20Shot%202019-10-28%20at%204.24.28%20pm.png)
@@ -760,8 +760,8 @@ Use the package to break the responsibilities and achieve high coupling
 ####  6.2.3. <a name='UsingLayersHelpsAddressProblems'></a>Using Layers Helps Address Problems 
 - Changes rippling through system due to coupling
 - Intertwining of application logic and UI, reducing reuse and restricting distribution options 
-- Intertwining of ::general tech. services or business logic:: with application specific logic, reducing reuse, restricting distribution, and complicating replacement 
-- ::High coupling:: across areas of concern, impacting division of development work 
+- Intertwining of general tech. services or business logic with application specific logic, reducing reuse, restricting distribution, and complicating replacement 
+- High coupling across areas of concern, impacting division of development work 
 
 ##  7. <a name='ModellingandDesignintheSoftwareprocess'></a>Modelling and Design in the Software process
 UP - Unified Process
@@ -813,7 +813,7 @@ Initial short project phase answering questions like:
 ###  7.5. <a name='ObjectDesignSkillvs.UMLDrawingSkill'></a>Object Design Skill vs. UML Drawing Skill
 - UML models should reflect decision making about the design
 - UML models should use correct notaion as a principle of communication 
-- However, of ::greatest importance is object design skill::, not UML drawing skill
+- However, of greatest importance is object design skill, not UML drawing skill
 - Object design requires knowledge of 
 	- principles of responsibility assignment
 	- design patterns
