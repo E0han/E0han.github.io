@@ -186,7 +186,6 @@ mermaid: true
 # Chart
 chart: true
 
-mathjax
 ## => Build
 ##############################
 markdown    : kramdown
