@@ -8,11 +8,14 @@ tags: swen, exam
 	* 1.1. [Analysis, Design and Implementation](#AnalysisDesignandImplementation)
 	* 1.2. [Object-Oriented Software Design  (OOD)](#Object-OrientedSoftwareDesignOOD)
 		* 1.2.1. [Layers](#Layers)
+
 	* 1.3. [Core App. Logic](#CoreApp.Logic)
 	* 1.4. [Responsibility](#Responsibility)
+
 		* 1.4.1. [Doing responsibilities include:](#Doingresponsibilitiesinclude:)
 		* 1.4.2. [Knowing responsibilities include knowledge of:](#Knowingresponsibilitiesincludeknowledgeof:)
 		* 1.4.3. [Responsibilities and Methods are Related](#ResponsibilitiesandMethodsareRelated)
+
 	* 1.5. [Responsibility-Driven Design (RDD)](#Responsibility-DrivenDesignRDD)
 	* 1.6. [Visibility in Design](#VisibilityinDesign)
 * 2. [Patterns](#Patterns)
@@ -22,43 +25,52 @@ tags: swen, exam
 		* 2.3.1. [Solution](#Solution)
 		* 2.3.2. [Evaluate the effect of coupling](#Evaluatetheeffectofcoupling)
 		* 2.3.3. [Contraindications](#Contraindications)
+
 	* 2.4. [High Cohesion](#HighCohesion)
 		* 2.4.1. [Problem](#Problem)
 		* 2.4.2. [Functional cohesion:](#Functionalcohesion:)
 		* 2.4.3. [Solution](#Solution-1)
 		* 2.4.4. [Contrasting levels of Cohesion](#ContrastinglevelsofCohesion)
 		* 2.4.5. [Contraindications](#Contraindications-1)
+
 	* 2.5. [Coupling and Cohesion](#CouplingandCohesion)
 	* 2.6. [Creator](#Creator)
 		* 2.6.1. [Problem:](#Problem:)
 		* 2.6.2. [Example](#Example)
+
 	* 2.7. [Solution](#Solution-1)
 		* 2.7.1. [Sequence diagram and design diagram:](#Sequencediagramanddesigndiagram:)
 		* 2.7.2. [Contraindications (Where you shouldn’t apply the pattern)](#ContraindicationsWhereyoushouldntapplythepattern)
+
 	* 2.8. [Information Expert](#InformationExpert)
 		* 2.8.1. [Problem](#Problem-1)
 		* 2.8.2. [Solution](#Solution-1)
 		* 2.8.3. [Contraindications](#Contraindications-1)
+
 	* 2.9. [Controller](#Controller)
 	* 2.10. [Polymorphism](#Polymorphism)
 		* 2.10.1. [Problem](#Problem-1)
 		* 2.10.2. [Solution](#Solution-1)
 		* 2.10.3. [Example: Monopoly Game Version 2](#Example:MonopolyGameVersion2)
 		* 2.10.4. [Generalisation-Specialisation Class Hierarchy](#Generalisation-SpecialisationClassHierarchy)
+
 	* 2.11. [Pure Fabrication](#PureFabrication)
 		* 2.11.1. [Problem](#Problem-1)
 		* 2.11.2. [Solution](#Solution-1)
 		* 2.11.3. [Example:](#Example:)
 		* 2.11.4. [Contraindications](#Contraindications-1)
+
 	* 2.12. [Indirection间接](#Indirection)
 		* 2.12.1. [Problem](#Problem-1)
 		* 2.12.2. [Solution](#Solution-1)
 		* 2.12.3. [Contraindications](#Contraindications-1)
+
 	* 2.13. [Protected Variations](#ProtectedVariations)
 		* 2.13.1. [Problem](#Problem-1)
 		* 2.13.2. [Solution](#Solution-1)
 		* 2.13.3. [Open-Closed Principle (OCP)](#Open-ClosedPrincipleOCP)
 		* 2.13.4. [Contraindications](#Contraindications-1)
+
 	* 2.14. [Relationships between GRASP principles](#RelationshipsbetweenGRASPprinciples)
 * 3. [Apply some GoF design patterns](#ApplysomeGoFdesignpatterns)
 	* 3.1. [Adapter](#Adapter)
@@ -69,12 +81,14 @@ tags: swen, exam
 		* 3.1.5. [Another Example: Disney Madness](#AnotherExample:DisneyMadness)
 		* 3.1.6. [What GRASP principles are used by Adapter?](#WhatGRASPprinciplesareusedbyAdapter)
 		* 3.1.7. [Issues arising from Adapter](#IssuesarisingfromAdapter)
+
 	* 3.2. [(Concrete) Factory](#ConcreteFactory)
 		* 3.2.1. [Problem](#Problem-1)
 		* 3.2.2. [Solution](#Solution-1)
 		* 3.2.3. [Factory class example](#Factoryclassexample)
 		* 3.2.4. [Coding Example](#CodingExample)
 		* 3.2.5. [Issues arising from Factory](#IssuesarisingfromFactory)
+
 	* 3.3. [Singleton Pattern](#SingletonPattern)
 		* 3.3.1. [problem](#problem)
 		* 3.3.2. [Solution](#Solution-1)
@@ -86,11 +100,13 @@ tags: swen, exam
 		* 3.4.2. [Solution](#Solution-1)
 		* 3.4.3. [Example](#Example-1)
 		* 3.4.4. [Strategy factory](#Strategyfactory)
+
 	* 3.5. [Composite](#Composite)
 		* 3.5.1. [Problem](#Problem-1)
 		* 3.5.2. [Solution](#Solution-1)
 		* 3.5.3. [Examples 1: Composite shape](#Examples1:Compositeshape)
 		* 3.5.4. [Coding Example](#CodingExample-1)
+
 	* 3.6. [Composite Strategies](#CompositeStrategies)
 	* 3.7. [Façade](#Faade)
 		* 3.7.1. [problem](#problem-1)
@@ -98,18 +114,21 @@ tags: swen, exam
 		* 3.7.3. [UML package diagram: Facade](#UMLpackagediagram:Facade)
 		* 3.7.4. [Example: Facade Vs. GRASP Controller](#Example:FacadeVs.GRASPController)
 		* 3.7.5. [Example: Facade Vs. Adapter](#Example:FacadeVs.Adapter)
+
 	* 3.8. [Observer (aka. Publish-Subscribe)](#Observeraka.Publish-Subscribe)
 		* 3.8.1. [Problem](#Problem-1)
 		* 3.8.2. [Solution](#Solution-1)
 		* 3.8.3. [Example](#Example-1)
 		* 3.8.4. [Coding Example](#CodingExample-1)
 		* 3.8.5. [Example: Alarm Events, different Subscribers](#Example:AlarmEventsdifferentSubscribers)
+
 * 4. [State Machine](#StateMachine)
 	* 4.1. [Definitions:](#Definitions:)
 	* 4.2. [HOW TO APPLY SMD](#HOWTOAPPLYSMD)
 	* 4.3. [Transition Action and Guard Example](#TransitionActionandGuardExample)
 		* 4.3.1. [Choice Pseudo-state](#ChoicePseudo-state)
 	* 4.4. [Nested States](#NestedStates)
+
 * 5. [Architectural Analysis and Logical Architecture](#ArchitecturalAnalysisandLogicalArchitecture)
 	* 5.1. [Software Architecture](#SoftwareArchitecture)
 	* 5.2. [Architectural Analysis](#ArchitecturalAnalysis)
@@ -121,6 +140,7 @@ tags: swen, exam
 	* 5.6. [Priorities](#Priorities)
 	* 5.7. [Architecture Factor Table](#ArchitectureFactorTable)
 	* 5.8. [Technical Memo](#TechnicalMemo)
+
 * 6. [Logical Architecture](#LogicalArchitecture)
 	* 6.1. [Layered Architecture](#LayeredArchitecture)
 		* 6.1.1. [Example: UML Package Diagram Notations: Layer](#Example:UMLPackageDiagramNotations:Layer)
@@ -129,13 +149,16 @@ tags: swen, exam
 		* 6.2.1. [Mixing Views of the architecture](#MixingViewsofthearchitecture)
 		* 6.2.2. [System Sequence Diagram and Layers](#SystemSequenceDiagramandLayers)
 		* 6.2.3. [Using Layers Helps Address Problems](#UsingLayersHelpsAddressProblems)
+
 * 7. [Modelling and Design in the Software process](#ModellingandDesignintheSoftwareprocess)
 	* 7.1. [Schedule-Oriented Terms in UP](#Schedule-OrientedTermsinUP)
 	* 7.2. [Inception 开始](#Inception)
 		* 7.2.1. [Outcome:](#Outcome:)
 		* 7.2.2. [Inception Artefacts (Partial) 人工](#InceptionArtefactsPartial)
+
 	* 7.3. [Requirements to Design - Iteratively](#RequirementstoDesign-Iteratively)
 		* 7.3.1. [Spreading Use Cases across Iterations](#SpreadingUseCasesacrossIterations)
+
 	* 7.4. [Agile Modelling & Lightweight UML Drawing](#AgileModellingLightweightUMLDrawing)
 	* 7.5. [Object Design Skill vs. UML Drawing Skill](#ObjectDesignSkillvs.UMLDrawingSkill)
 
@@ -169,7 +192,7 @@ OOD: a conceptual solution that emphasises强调 defining software objects and t
 One of common ways of structuring software systems.
 Example:
 Simple layer system, with 3 layer, going down and become more general.
-![](assets/smd/Screen%20Shot%202019-10-25%20at%207.01.42%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-25%20at%207.01.42%20pm.png)
 The logic layer may can be used for multiple applications , but they all tied up to the business core and design concepts
 
 ###  1.3. <a name='CoreApp.Logic'></a>Core App. Logic
@@ -190,7 +213,7 @@ Def: A contract or obligation of a classifier
 	- Related objects
 	- Derivable or calculable items
 ####  1.4.3. <a name='ResponsibilitiesandMethodsareRelated'></a>Responsibilities and Methods are Related
-![](assets/smd/Screen%20Shot%202019-10-25%20at%207.29.27%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-25%20at%207.29.27%20pm.png)
 
 ###  1.5. <a name='Responsibility-DrivenDesignRDD'></a>Responsibility-Driven Design (RDD)
 RDD sees an OO Design as a community of collaborating responsible objects. RDD involves assigning responsibilities to classes, which should be based on proven principles
@@ -231,7 +254,7 @@ Problems for a class with high coupling:
 ####  2.3.1. <a name='Solution'></a>Solution
 Assign responsibility so that coupling remains low. Use this principle to evaluate alternatives.
 ####  2.3.2. <a name='Evaluatetheeffectofcoupling'></a>Evaluate the effect of coupling
-![](assets/smd/Screen%20Shot%202019-10-25%20at%208.22.57%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-25%20at%208.22.57%20pm.png)
 
 ####  2.3.3. <a name='Contraindications'></a>Contraindications
 High coupling to stable elements is rarely a problem
@@ -251,7 +274,7 @@ Assign a responsibility so that cohesion remains high. Use this to evaluate alte
 	- Hard to maintain
 	- Delicate; constantly affected by change
 ####  2.4.4. <a name='ContrastinglevelsofCohesion'></a>Contrasting levels of Cohesion
-![](assets/smd/Screen%20Shot%202019-10-25%20at%208.30.20%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-25%20at%208.30.20%20pm.png)
 
 ####  2.4.5. <a name='Contraindications-1'></a>Contraindications
 Lower cohesion is sometimes justified to meet nonfunctional requirements
@@ -260,7 +283,7 @@ Eg. To meet performance requirements, larder, less cohesive classes are used to 
 *Note: Coupling and cohesion are fundamental design properties which are interdependent: both must be considered together.*
 
 ###  2.5. <a name='CouplingandCohesion'></a>Coupling and Cohesion
-![](assets/smd/Screen%20Shot%202019-10-25%20at%208.34.02%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-25%20at%208.34.02%20pm.png)
 
 Low Coupling and High Cohesion: Yin-and-Yang design
 
@@ -270,7 +293,7 @@ Low Coupling and High Cohesion: Yin-and-Yang design
 Who should be responsible for creating a new instance of some class
 ####  2.6.2. <a name='Example'></a>Example
 - It helps to decide which class should be responsible for creating a new instance of a class. 
-![](assets/smd/Screen%20Shot%202019-10-25%20at%207.56.39%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-25%20at%207.56.39%20pm.png)
 
 In this case, the class Board is the creator of Square
 ###  2.7. <a name='Solution-1'></a>Solution
@@ -282,8 +305,8 @@ Assign class B responsibility to create instance of class A if one of these is t
 If >1 applies choose B which aggregates使聚集/contains A
 
 ####  2.7.1. <a name='Sequencediagramanddesigndiagram:'></a>Sequence diagram and design diagram:
-![](assets/smd/Screen%20Shot%202019-10-25%20at%208.02.43%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-25%20at%208.03.00%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-25%20at%208.02.43%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-25%20at%208.03.00%20pm.png)
 
 The black diamond above is composition (or strong aggregation), it basically says the Square don’t exists independently of the Board. The Board needs to know about the Square but the Square doesn’t need to know about the board. 
 
@@ -338,13 +361,13 @@ Polymorphism
 	- Giving a single interface to entities of different types
 
 ####  2.10.3. <a name='Example:MonopolyGameVersion2'></a>Example: Monopoly Game Version 2
-![](assets/smd/Screen%20Shot%202019-10-26%20at%204.37.45%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%204.37.45%20pm.png)
 Use cases, skipped as rules for game known.
 SSDs: No update required
 Domain Model:
 	- Concepts: Square, GoSquare, IncomeTaxSquare, GotoJailSquare
 	- Suggests a class hierarchy
-![](assets/smd/Screen%20Shot%202019-10-26%20at%204.40.52%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%204.40.52%20pm.png)
 
 ####  2.10.4. <a name='Generalisation-SpecialisationClassHierarchy'></a>Generalisation-Specialisation Class Hierarchy
 Generalisation:
@@ -372,13 +395,13 @@ Assign a highly cohesive set of responsibilities to a class not in the problem d
 *Pattern justifies increasing the representation gap.*
 
 ####  2.11.3. <a name='Example:'></a>Example:
-![](assets/smd/page26image3802911440.png) 
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/page26image3802911440.png) 
 [version 1 on the left and 2 on the right]
 
 Have reusable dice class and Player: takeTurn method which has player roll and total:
 Need to refer back to dice without re-roll
-![](assets/smd/Screen%20Shot%202019-10-26%20at%205.03.20%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-26%20at%205.04.42%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%205.03.20%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%205.04.42%20pm.png)
 
 ####  2.11.4. <a name='Contraindications-1'></a>Contraindications
 - Sometimes overused as excuse to add new objects
@@ -390,12 +413,12 @@ Need to refer back to dice without re-roll
 ####  2.12.1. <a name='Problem-1'></a>Problem
 Where to assign a responsibility to avoid direct coupling between two or more s/w elements?
 How to de-couple objects so that low coupling is supported and reuse potential remains higher?
-![](assets/smd/Screen%20Shot%202019-10-26%20at%205.09.20%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%205.09.20%20pm.png)
 
 ####  2.12.2. <a name='Solution-1'></a>Solution 
 Assign the responsibility to an intermediate object to mediate between the other components or services so that they are not directly coupled. 
 	- Intermediary creates an *indirection*between the other components. 
-![](assets/smd/Screen%20Shot%202019-10-26%20at%205.10.24%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%205.10.24%20pm.png)
 
 ####  2.12.3. <a name='Contraindications-1'></a>Contraindications
 Higher complexity in design needs to be justified by the lower coupling
@@ -428,7 +451,7 @@ E.g. A class can be closed w.r.t. attribute access (access methods only – no c
 
 
 ###  2.14. <a name='RelationshipsbetweenGRASPprinciples'></a>Relationships between GRASP principles
-![](assets/smd/Screen%20Shot%202019-10-26%20at%205.27.48%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%205.27.48%20pm.png)
 
 ##  3. <a name='ApplysomeGoFdesignpatterns'></a>Apply some GoF design patterns 
 Recognise GRASP principles (shown above) as a generalisation of other design patterns. 
@@ -456,11 +479,11 @@ How to resolve incompatible interfaces, or provide a ::stable interface:: to ::s
 Convert the original interface of a component into another interface, through an intermediate adapter object
 
 ####  3.1.4. <a name='Example-1'></a>Example
-![](assets/smd/Screen%20Shot%202019-10-26%20at%208.32.44%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-26%20at%208.34.47%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%208.32.44%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%208.34.47%20pm.png)
 .
 ####  3.1.5. <a name='AnotherExample:DisneyMadness'></a>Another Example: Disney Madness
-![](assets/smd/Screen%20Shot%202019-10-26%20at%208.40.50%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%208.40.50%20pm.png)
 
 It’s easy to see that the main only need to call the method move() from the adapter and it will operate the appropriate method from its end.
 ```java
@@ -474,7 +497,7 @@ Main (){
 
 ####  3.1.6. <a name='WhatGRASPprinciplesareusedbyAdapter'></a>What GRASP principles are used by Adapter?
 The Adapter design pattern is a kind of Indirection and a Pure Fabrication, that uses Polymorphism.
-![](assets/smd/Screen%20Shot%202019-10-26%20at%208.50.00%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%208.50.00%20pm.png)
 
 ####  3.1.7. <a name='IssuesarisingfromAdapter'></a>Issues arising from Adapter
 Who creates the adapters?
@@ -494,7 +517,7 @@ Who should be responsible for creating objects when there are special considerat
 Create a Pure Fabrication object called a Factory that handles the creation. 
 
 ####  3.2.3. <a name='Factoryclassexample'></a>Factory class example
-![](assets/smd/Screen%20Shot%202019-10-26%20at%208.53.07%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%208.53.07%20pm.png)
 
 ####  3.2.4. <a name='CodingExample'></a>Coding Example
 Disneyfactory.java
@@ -537,7 +560,7 @@ Exactly one instance of a class is allowed—it is a “singleton.” Objects ne
 Define a static method of the class that returns the singleton. 
 
 ####  3.3.3. <a name='Example-1'></a>Example
-![](assets/smd/Screen%20Shot%202019-10-26%20at%209.03.13%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%209.03.13%20pm.png)
 
 ####  3.3.4. <a name='CodingExample-1'></a>Coding Example
 ```java
@@ -553,7 +576,7 @@ accountingAdapter = ServicesFactory.getInstance().getAccountingAdapter(); //… 
 // other methods… 
 } // end of class 
 ```
-![](assets/smd/Screen%20Shot%202019-10-26%20at%209.04.48%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%209.04.48%20pm.png)
 
 ####  3.3.5. <a name='Static:Whysomeandnotall'></a>Static: Why some and not all?
 Why not aren’t all Singleton service methods *static?*
@@ -572,12 +595,12 @@ How to design for the ability to change these algorithms or policies?
 Define each algorithm/policy/strategy in a separate class, with a common interface. 
 
 ####  3.4.3. <a name='Example-1'></a>Example
-![](assets/smd/Screen%20Shot%202019-10-27%20at%206.46.29%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-27%20at%206.59.47%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-27%20at%207.06.03%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%206.46.29%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%206.59.47%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%207.06.03%20pm.png)
 
 ####  3.4.4. <a name='Strategyfactory'></a>Strategy factory
-![](assets/smd/Screen%20Shot%202019-10-27%20at%207.07.24%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%207.07.24%20pm.png)
 Strategy not stored. New strategy created for every request. 
 PricingStrategyFactory.java
 ```java
@@ -588,7 +611,7 @@ Main.java
 ```java
 ISalePricingStrategy  strategy = PricingStrategyFactory.getInstance(). getSalePricingStrategy();
 ```
-![](assets/smd/Screen%20Shot%202019-10-27%20at%207.23.14%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%207.23.14%20pm.png)
 
 ###  3.5. <a name='Composite'></a>Composite 
 Conflict resolution strategy: When multiple policies are applicable, how are these policies resolved?
@@ -601,10 +624,10 @@ Conflict resolution strategy: When multiple policies are applicable, how are the
 How to treat a group or composition structure of objects the same way (polymorphically) as a non-composite (atomic) object? 
 ####  3.5.2. <a name='Solution-1'></a>Solution 
 Define classes for composite and atomic objects so that they implement the same interface. 
-![](assets/smd/Screen%20Shot%202019-10-27%20at%207.27.20%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%207.27.20%20pm.png)
 
 ####  3.5.3. <a name='Examples1:Compositeshape'></a>Examples 1: Composite shape
-![](assets/smd/Screen%20Shot%202019-10-27%20at%207.27.59%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%207.27.59%20pm.png)
 
 ####  3.5.4. <a name='CodingExample-1'></a>Coding Example
 Picture.java
@@ -624,12 +647,12 @@ public void draw() {
 ```
 
 ###  3.6. <a name='CompositeStrategies'></a>Composite Strategies
-![](assets/smd/Screen%20Shot%202019-10-27%20at%207.31.10%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-27%20at%207.35.09%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%207.31.10%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%207.35.09%20pm.png)
 
 	- the *Sale*object treats a Composite Strategy that contains other strategies just like any other *ISalePricingStrategy*
 	- **UML**: ::ISalePricingStrategy is an interface, not a class::; this is the way in UML 2 to indicate an object of an unknown class, but that implements this interface 
-![](assets/smd/Screen%20Shot%202019-10-27%20at%207.36.22%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%207.36.22%20pm.png)
 
 
 ###  3.7. <a name='Faade'></a>Façade 
@@ -648,10 +671,10 @@ A “rule engine” subsystem, whise specific implementation is not yet known. I
 Require a common, unified interface to a disparate set of implementations or interfaces—such as within a subsystem—is required. There may be undesirable coupling to many things in the subsystem, or the implementation of the subsystem may change. What to do? 
 ####  3.7.2. <a name='Solution-1'></a>Solution
 Define a single point of contact to the subsystem—::a facade object that wraps the subsystem::. This facade object presents a single unified interface and is responsible for collaborating with the subsystem components. 
-![](assets/smd/Screen%20Shot%202019-10-27%20at%208.16.36%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%208.16.36%20pm.png)
 
 ####  3.7.3. <a name='UMLpackagediagram:Facade'></a>UML package diagram: Facade
-![](assets/smd/Screen%20Shot%202019-10-27%20at%208.17.19%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%208.17.19%20pm.png)
 ```java
 public class Sale { 	public void makeLineItem( ProductDescription desc, int quantity ) { 
 		SalesLineItem sli = new SalesLineItem( desc, quantity ); 		// call to the Facade 		if ( POSRuleEngineFacade.getInstance().isInvalid( sli, this ) ) 
@@ -662,7 +685,7 @@ public class Sale { 	public void makeLineItem( ProductDescription desc, int qu
 ```
 
 ####  3.7.4. <a name='Example:FacadeVs.GRASPController'></a>Example: Facade Vs. GRASP Controller 
-![](assets/smd/Screen%20Shot%202019-10-27%20at%208.19.35%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%208.19.35%20pm.png)
 
 ####  3.7.5. <a name='Example:FacadeVs.Adapter'></a>Example: Facade Vs. Adapter
 - **Façade**wraps access to a ::subsystem or system:: with ::a single object:: 
@@ -675,12 +698,12 @@ Different kinds of ::subscriber objects:: are interested in the ::state changes 
 
 ####  3.8.2. <a name='Solution-1'></a>Solution
 Define a “subscriber” or “listener” interface. Subscribers implement this interface. The publisher can dynamically register subscribers who are interested in an event and notify them when an event occurs. 
-![](assets/smd/Screen%20Shot%202019-10-27%20at%208.23.45%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%208.23.45%20pm.png)
 
 ####  3.8.3. <a name='Example-1'></a>Example 
 
-![](assets/smd/Screen%20Shot%202019-10-27%20at%208.28.08%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-27%20at%208.28.38%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%208.28.08%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%208.28.38%20pm.png)
 
 ####  3.8.4. <a name='CodingExample-1'></a>Coding Example
 ObserverBase.java
@@ -743,7 +766,7 @@ Public class Main {
 ```
 
 ####  3.8.5. <a name='Example:AlarmEventsdifferentSubscribers'></a>Example: Alarm Events, different Subscribers
-![](assets/smd/Screen%20Shot%202019-10-27%20at%208.44.50%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-27%20at%208.44.50%20pm.png)
 
 
 
@@ -783,18 +806,18 @@ A *state machine*describes the behaviour of an object in terms of
 
 
 ###  4.3. <a name='TransitionActionandGuardExample'></a>Transition Action and Guard Example
-![](assets/smd/E32506F8-DBF1-4F8D-BB3F-D5C8219EEA27.png)
-![](assets/smd/Screen%20Shot%202019-10-26%20at%208.03.21%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/E32506F8-DBF1-4F8D-BB3F-D5C8219EEA27.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%208.03.21%20pm.png)
 ####  4.3.1. <a name='ChoicePseudo-state'></a>Choice Pseudo-state
-![](assets/smd/Screen%20Shot%202019-10-26%20at%208.13.55%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-26%20at%208.14.15%20pm.png)  
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%208.13.55%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-26%20at%208.14.15%20pm.png)  
 
 Another example:
 When a timer reaches 60 seconds, the crossing light becomes “Red”
-![](assets/smd/83C10211-0528-4D9E-87B8-0ABA87EAA9BB.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/83C10211-0528-4D9E-87B8-0ABA87EAA9BB.png)
 
 ###  4.4. <a name='NestedStates'></a>Nested States
-![](assets/smd/39F2D23C-F85C-4323-B94C-57C28FAC9721.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/39F2D23C-F85C-4323-B94C-57C28FAC9721.png)
 
 ##  5. <a name='ArchitecturalAnalysisandLogicalArchitecture'></a>Architectural Analysis and Logical Architecture
 ###  5.1. <a name='SoftwareArchitecture'></a>Software Architecture
@@ -816,10 +839,10 @@ We should do some architectural analysis of the requirements at the beginning to
 
 ####  5.2.1. <a name='Examples:SignificantFunctionalrequirements'></a>Examples: Significant Functional requirements
 Significant functional requirements 
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.05.30%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.05.30%20pm.png)
 
 ####  5.2.2. <a name='Example:SignificantNon-FunctionalRequirements'></a>Example: Significant Non-Functional Requirements
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.07.18%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.07.18%20pm.png)
 
 ###  5.3. <a name='IdentificationandResolution'></a>Identification and Resolution
 - effect of reliability/fault-tolerance requirements on design?
@@ -859,15 +882,15 @@ Which of the following requirements for new LMS is architecturally significant?
 ###  5.7. <a name='ArchitectureFactorTable'></a>Architecture Factor Table
 A documentation that records ::the influence of the factors, their priorities, and their variability:: (immediate need for flexibility and future evolution) 
 
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.22.51%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.22.51%20pm.png)
 ###  5.8. <a name='TechnicalMemo'></a>Technical Memo
 A documentation that records ::alternative solutions, decisions, influential factors, and motivations:: for the noteworthy issues and decisions 
 
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.24.14%20pm.png)
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.24.28%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.24.14%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.24.28%20pm.png)
 
 ##  6. <a name='LogicalArchitecture'></a>Logical Architecture
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.27.40%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.27.40%20pm.png)
 
 **Logical architecture:** 
 	- The large-scale organisation of the software classes into packages, subsystems and layers
@@ -884,11 +907,11 @@ A documentation that records ::alternative solutions, decisions, influential fac
 - **Relaxed layered architecture:**A higher layer calls upon several lower layers. Common in IS. 
 
 ####  6.1.1. <a name='Example:UMLPackageDiagramNotations:Layer'></a>Example: UML Package Diagram Notations: Layer
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.31.38%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.31.38%20pm.png)
 Use the package to break the responsibilities and achieve high coupling 
 
 ####  6.1.2. <a name='Example:Commonlayers'></a>Example: Common layers
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.33.10%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.33.10%20pm.png)
 
 ###  6.2. <a name='Guidelines:'></a>Guidelines:
 - Organise large-scale logical structure of system into distinct cohesive layers from high application specific to low general services 
@@ -898,9 +921,9 @@ Use the package to break the responsibilities and achieve high coupling
 - Don’t Show External Resources as the Bottom Layer 
 
 ####  6.2.1. <a name='MixingViewsofthearchitecture'></a>Mixing Views of the architecture
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.34.41%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.34.41%20pm.png)
 ####  6.2.2. <a name='SystemSequenceDiagramandLayers'></a>System Sequence Diagram and Layers
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.35.00%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.35.00%20pm.png)
 ####  6.2.3. <a name='UsingLayersHelpsAddressProblems'></a>Using Layers Helps Address Problems 
 - Changes rippling through system due to coupling
 - Intertwining of application logic and UI, reducing reuse and restricting distribution options 
@@ -910,7 +933,7 @@ Use the package to break the responsibilities and achieve high coupling
 ##  7. <a name='ModellingandDesignintheSoftwareprocess'></a>Modelling and Design in the Software process
 UP - Unified Process
 ###  7.1. <a name='Schedule-OrientedTermsinUP'></a>Schedule-Oriented Terms in UP
-![](assets/smd/Screen%20Shot%202019-10-28%20at%204.43.01%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%204.43.01%20pm.png)
 
 ###  7.2. <a name='Inception'></a>Inception 开始
 Initial short project phase answering questions like:
@@ -928,7 +951,7 @@ Initial short project phase answering questions like:
 	- prototypes: clarify requirements or technique questions
 	- go or no go decision
 ####  7.2.2. <a name='InceptionArtefactsPartial'></a>Inception Artefacts (Partial) 人工
-![](assets/smd/Screen%20Shot%202019-10-28%20at%205.04.36%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%205.04.36%20pm.png)
 
 ###  7.3. <a name='RequirementstoDesign-Iteratively'></a>Requirements to Design - Iteratively
 - Iteratively Do the Right Thing, Do the Thing Right
@@ -941,7 +964,7 @@ Initial short project phase answering questions like:
 	- Mixed into a few weeks: proof-of-concept development, finding resources, planning, setting up the environment …. 
 
 ####  7.3.1. <a name='SpreadingUseCasesacrossIterations'></a>Spreading Use Cases across Iterations
-![](assets/smd/Screen%20Shot%202019-10-28%20at%205.09.54%20pm.png)
+![](https://github.com/E0han/E0han.github.io/tree/master/assets/smd/Screen%20Shot%202019-10-28%20at%205.09.54%20pm.png)
 
 
 ###  7.4. <a name='AgileModellingLightweightUMLDrawing'></a>Agile Modelling & Lightweight UML Drawing
