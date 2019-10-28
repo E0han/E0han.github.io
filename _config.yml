@@ -200,7 +200,7 @@ exclude:
   - /screenshots
   - /test
   - /vendor
-
+theme: jekyll-text-theme
 defaults:
   - scope:
       path: ""
