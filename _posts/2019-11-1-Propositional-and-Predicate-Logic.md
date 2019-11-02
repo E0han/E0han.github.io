@@ -174,7 +174,7 @@ Knowledge bases are often presented in CNF, as a ~set (conjunction) of clauses.~
 Abstracting from the order of literals and clauses, we can think of a formula in CNF as given in **clausal form**,  we may write:
 - (P ∨ ¬Q ∨ S) ∧ (P ∨ ¬R ∨ S) ∧ (¬S ∨ ¬P) ∧ (¬S ∨ Q ∨ R)
 As 
-- {{P, S, ¬Q}, {P, S, ¬R}, {¬P, ¬S}, {Q, R, ¬S}}
+- { {P, S, ¬Q}, {P, S, ¬R}, {¬P, ¬S}, {Q, R, ¬S}}
 - No distinction between these.
 
 #### Empty Clauses
