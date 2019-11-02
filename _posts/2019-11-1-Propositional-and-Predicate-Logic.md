@@ -1,6 +1,6 @@
 ---
 title: Models of Computation Part1 - Basic Propositional and Predicate Logic
-tags: exam ComputerTheory
+tags: exam CompTheory
 ---
 
 ## Propositional Logic
