@@ -154,7 +154,7 @@ If a normal form ~leads to a unique representation for every Boolean function~, 
 For example, the formula (A ⇒ B) ∧ (B ⊕ C) is written as 
 	- ABC ⊕ AC ⊕ B ⊕ C
 This form is **unique**, up to reordering of conjuncts and summands. Or, representing the summands as sets:
-	- {{A, B, C}, {A, C}, {B}, {C}}
+	- { {A, B, C}, {A, C}, {B}, {C}}
 	
 ### Canonical Forms: ROBDDs
 ::Binary decision diagrams (BDDs) give another canonical form::

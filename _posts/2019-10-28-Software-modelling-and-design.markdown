@@ -1,6 +1,6 @@
 ---
 title: Software Modelling and Design Notes
-tags: swen, exam
+tags: swen exam
 ---
 ##  1. <a name='DesignModels'></a>Design Models
 ###  1.1. <a name='AnalysisDesignandImplementation'></a>Analysis, Design and Implementation
